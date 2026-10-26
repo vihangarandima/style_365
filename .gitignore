@@ -1,0 +1,13 @@
+# Local editor / preview config
+.claude/
+
+# Separate project, not part of the STYLE 365 site
+luxe/
+
+# Python cache from the image pipeline
+__pycache__/
+*.pyc
+
+# OS files
+Thumbs.db
+.DS_Store

@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport">
+  <meta name="theme-color" content="#F6F4FB">
+  <title>STYLE 365 | Define Your Style, Own Your World</title>
+  <meta name="description" content="STYLE 365 - Premium lifestyle apparel redefining everyday comfort and bold self-expression. Elevate your everyday look with handcrafted pieces made for all-day elegance.">
+
+  <!-- Google Fonts: Syne, Plus Jakarta Sans, Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700;1,800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['Syne', 'sans-serif'],
+            outfit: ['Outfit', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              purple: '#7952b3',
+              darkPurple: '#512a87',
+              electricViolet: '#6100a4',
+              lavender: '#8B6CB5',
+              softLilac: '#ECE5F4',
+              magenta: '#CE1B58',
+              sunsetOrange: '#FF6B35',
+              cardBg: '#8c6fb7',
+              canvasBg: '#F8F7FB',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body class="text-neutral-800 antialiased selection:bg-brand-purple selection:text-white min-h-screen relative overflow-x-hidden">
+
+  <!-- ========================================================================= -->
+  <!-- TOP ANNOUNCEMENT BANNER -->
+  <!-- ========================================================================= -->
+  <div class="ticker text-white text-[11px] sm:text-xs py-2 font-medium tracking-wide" aria-label="Announcements">
+    <div class="ticker-track">
+      <span>✦ Free Express Worldwide Shipping on Orders Over $150</span>
+      <span>✦ Use Code <strong class="font-bold">STYLE365</strong> for 10% Off</span>
+      <span>✦ Summer / Autumn '26 Drop Is Live</span>
+      <span>✦ Sustainable Fabrics · Limited Editions</span>
+      <span aria-hidden="true">✦ Free Express Worldwide Shipping on Orders Over $150</span>
+      <span aria-hidden="true">✦ Use Code <strong class="font-bold">STYLE365</strong> for 10% Off</span>
+      <span aria-hidden="true">✦ Summer / Autumn '26 Drop Is Live</span>
+      <span aria-hidden="true">✦ Sustainable Fabrics · Limited Editions</span>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- MAIN HEADER (floating glass capsule) -->
+  <!-- ========================================================================= -->
+  <header class="sticky top-0 z-40 w-full px-3 sm:px-6 lg:px-10 pt-2.5 sm:pt-3" id="siteHeader">
+    <nav aria-label="Main Navigation" class="glass-nav max-w-[1400px] mx-auto rounded-full pl-2 pr-2 sm:pl-3 py-1.5 sm:py-2 grid grid-cols-[1fr_auto_1fr] items-center">
+
+      <!-- Mobile Menu Button (Visible on Mobile/Tablet) -->
+      <div class="flex items-center lg:hidden">
+        <button id="mobileMenuBtn" aria-label="Open Mobile Menu" class="icon-btn w-10 h-10 rounded-full flex items-center justify-center text-neutral-800">
+          <svg class="w-[22px] h-[22px]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" d="M4 7h16M4 12h10M4 17h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Desktop Navigation Left (Hidden on Mobile) -->
+      <div class="hidden lg:flex items-center gap-1 text-sm font-semibold tracking-tight text-neutral-800">
+        <a class="nav-link hover:text-brand-purple transition-colors relative" href="#shop">Shop</a>
+        <a class="nav-link hover:text-brand-purple transition-colors relative" href="#new-in">New In</a>
+        <a class="nav-link hover:text-brand-purple transition-colors relative" href="#collections">Collections</a>
+        <a class="nav-link hover:text-brand-purple transition-colors relative" href="#about">About</a>
+        <a class="nav-link hover:text-brand-purple transition-colors relative" href="#contact">Contact</a>
+      </div>
+
+      <!-- Centered Header Brand Logo -->
+      <div class="flex items-center justify-center">
+        <a aria-label="STYLE 365 Home" class="group block relative logo-ring transition-transform duration-300 hover:scale-105" href="#">
+          <img alt="STYLE 365 Official Logo" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full object-cover ring-2 ring-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATA2a5bHHXZGDkH1ZYFTyQvVl0DCXWbpAeCH1iKyPUcU4qvWTIP0zot-YwHrfYhUYTSypTLoJuz-6jOoztGYJYsLsA2rVxuRt6aW42AbqSvS2WVA7oaURh6G-sLzUby1ymO_rmAYSU9YbEuf_CmUUD3c0MWcaanAK6tq1Qw0OE5s5cTmRQqRZ61Ge9a5puwB8FikczRXbbfHMWaFNFAupzcnkQsyGiJbDn9ppZRBhII1jSUpCUWF4PgLz8hXjDdCuV1w">
+        </a>
+      </div>
+
+      <!-- Navigation Right Icons -->
+      <div class="flex items-center justify-end gap-1 sm:gap-2">
+        <!-- Search Button -->
+        <button id="searchBtn" aria-label="Search items" class="icon-btn w-10 h-10 rounded-full flex items-center justify-center text-neutral-700 hover:text-brand-purple" type="button">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="7"></circle>
+            <path stroke-linecap="round" d="m21 21-4.35-4.35"></path>
+          </svg>
+        </button>
+
+        <!-- Wishlist Icon Button -->
+        <a href="#wishlist" id="wishlistHeaderBtn" aria-label="Wishlist" class="icon-btn relative w-10 h-10 rounded-full hidden sm:flex items-center justify-center text-neutral-700 hover:text-brand-magenta">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+          </svg>
+          <span id="wishlistCountBadge" class="absolute top-1 right-1 w-4 h-4 bg-brand-magenta text-white text-[10px] font-bold rounded-full flex items-center justify-center shadow-sm">0</span>
+        </a>
+
+        <!-- User Profile Avatar -->
+        <a aria-label="User Profile" class="hidden sm:block relative" href="#profile">
+          <div class="w-10 h-10 rounded-full overflow-hidden ring-2 ring-white shadow-md hover:ring-brand-purple transition-all">
+            <img alt="User Avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlUwrA5HCtzLbKHrik9WhZ63Ar4vCvLjfLf3n9YJKC1fulEwNKCUno36kPoyRe5cnRDlYLn3bQXRJcrBOnq-r9vmF3ZAJ7A5S2KHa0sibEG8so8Qb3FxvNRBf6yXybW44ZJ654iUsOlT59AD_OL32ZgFi4qY0awOrOe48cpCD7tKiaU5CO-wY5B6oXQCyKszgrtRhii0UvvAu3IgwDTY0UgeBTp2Uj2blRyBFD4W4DHEkR6M-dmAVa">
+          </div>
+        </a>
+
+        <!-- Cart Badge Button -->
+        <button id="cartDrawerBtn" aria-label="Shopping Cart" class="btn-neo flex items-center gap-2 h-10 px-3.5 sm:px-4 rounded-full text-white" type="button">
+          <svg class="w-4 h-4 text-[#c9b3ff]" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+          </svg>
+          <span id="cartCountBadge" class="text-xs font-bold tracking-tight">1 item</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- HERO SECTION -->
+  <!-- ========================================================================= -->
+  <main class="w-full max-w-[1400px] mx-auto px-3 sm:px-6 lg:px-10 pt-3 sm:pt-4 pb-14 sm:pb-16">
+    <section class="hero-shell relative w-full rounded-[32px] sm:rounded-[44px] p-3 sm:p-7 pb-4 sm:pb-8 overflow-hidden shadow-2xl shadow-purple-900/10" data-purpose="hero-viewport-card">
+      
+      <!-- Top Oversized Editorial Headlines (Behind/Around Model) -->
+      <div class="w-full px-2 sm:px-8 pt-2 sm:pt-4 pb-1 select-none">
+
+        <!-- Meta row: season chip, hairline, collection index -->
+        <div class="flex items-center gap-3 mb-4 sm:mb-5">
+          <span class="eyebrow">SS / AW '26</span>
+          <span class="hero-rule"></span>
+          <span class="hero-index">N° 365</span>
+        </div>
+
+        <!-- Staggered lockup: STYLE left, WORLD right -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between">
+          <div class="z-10">
+            <p class="hero-kicker"><span class="kicker-line"></span>Define your</p>
+            <h1 class="headline-giant text-gradient">STYLE</h1>
+          </div>
+
+          <div class="z-10 self-end text-right -mt-1 md:mt-0">
+            <p class="hero-kicker justify-end">
+              <!-- 8-point geometric star accent -->
+              <svg class="star-glow w-3.5 h-3.5 sm:w-4 sm:h-4 text-brand-purple fill-current" viewBox="0 0 24 24">
+                <path d="M12 0l2.8 7.5L22 7.7l-5.6 5.3 1.9 7.8-6.3-4.3-6.3 4.3 1.9-7.8L0 7.7l7.2-.2z"></path>
+              </svg>
+              Own your<span class="kicker-line"></span>
+            </p>
+            <h2 class="headline-giant text-outline">WORLD</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOBILE / TABLET VIEW: Models Overlapping & Exceeding Top of Purple Box -->
+      <div class="block lg:hidden relative z-20 w-full flex justify-center items-end h-[300px] sm:h-[380px] -mb-16 sm:-mb-24 pointer-events-none select-none pt-2">
+        <!-- Left Model: Beige Dress -->
+        <div class="absolute left-1 sm:left-6 bottom-0 w-[130px] sm:w-[185px] z-10 flex items-end opacity-95">
+          <img alt="STYLE 365 model in the mocha smocked dress" class="w-full h-auto max-h-[265px] sm:max-h-[330px] object-contain drop-shadow-[0_15px_25px_rgba(40,10,60,0.35)]" src="assets/tiktok/hero-mocha-sm.webp" decoding="async">
+        </div>
+        <!-- Center Model: Floral Set (Head exceeds way above purple box!) -->
+        <div class="relative z-20 flex items-end">
+          <img alt="STYLE 365 model in the blue blossom co-ord set" class="w-[175px] sm:w-[230px] h-auto max-h-[300px] sm:max-h-[380px] object-contain drop-shadow-[0_20px_35px_rgba(40,10,60,0.45)]" src="assets/tiktok/hero-blossom-sm.webp" decoding="async">
+        </div>
+        <!-- Right Model: Magenta Dress -->
+        <div class="absolute right-1 sm:right-6 bottom-0 w-[130px] sm:w-[185px] z-10 flex items-end opacity-95">
+          <img alt="STYLE 365 model in the magenta dress" class="w-full h-auto max-h-[265px] sm:max-h-[330px] object-contain drop-shadow-[0_15px_25px_rgba(40,10,60,0.35)]" src="assets/tiktok/hero-magenta-sm.webp" decoding="async">
+        </div>
+      </div>
+
+      <!-- Main Rounded Purple Hero Panel -->
+      <div class="relative w-full rounded-[28px] sm:rounded-[38px] hero-canvas-card lg:min-h-[460px] px-5 pb-8 pt-20 sm:px-8 sm:pt-28 sm:pb-10 lg:p-10 overflow-visible mt-2 z-10">
+
+        <!-- Organic background ellipse graphic accents contained in background layer -->
+        <div class="absolute inset-0 rounded-[28px] sm:rounded-[38px] overflow-hidden pointer-events-none">
+          <div class="hero-grid"></div>
+          <div class="hero-sheen"></div>
+          <div class="hero-orb w-72 h-72 -left-16 -bottom-24 bg-[#9b7bff]"></div>
+          <div class="hero-orb w-64 h-64 -right-10 -top-20 bg-[#CE1B58] opacity-30"></div>
+          <div class="absolute -top-16 left-1/3 w-80 h-44 hero-bubble opacity-30 transform -rotate-12 pointer-events-none"></div>
+          <div class="absolute top-1/3 left-1/4 w-96 h-60 hero-bubble opacity-25 transform rotate-6 pointer-events-none"></div>
+          <div class="absolute -bottom-10 right-1/4 w-80 h-52 hero-bubble opacity-30 transform -rotate-6 pointer-events-none"></div>
+          <div class="absolute top-4 left-[35%] w-[380px] h-[140px] rounded-full border border-purple-200/20 transform -rotate-12 pointer-events-none hidden lg:block"></div>
+          <div class="absolute top-14 left-[33%] w-[420px] h-[150px] rounded-full border border-purple-200/15 transform -rotate-6 pointer-events-none hidden lg:block"></div>
+        </div>
+
+        <!-- 3-Column Content Layout (Left Copy, Center Spacer for Model, Right Features) -->
+        <div class="relative z-20 grid grid-cols-1 lg:grid-cols-12 gap-8 h-full items-start">
+          
+          <!-- LEFT PROMOTIONAL COLUMN (Span 4) -->
+          <div class="lg:col-span-4 flex flex-col justify-between h-full pt-2 text-center lg:text-left">
+            <div>
+              <!-- Pill Badge -->
+              <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold tracking-wide text-white/95 bg-white/15 backdrop-blur-md border border-white/25 mb-4 sm:mb-6 shadow-sm">
+                <span class="relative flex w-2 h-2"><span class="absolute inline-flex h-full w-full rounded-full bg-[#ff9cbf] opacity-75 animate-ping"></span><span class="relative inline-flex rounded-full w-2 h-2 bg-[#ff5fa2]"></span></span>
+                <span>New Collection</span>
+              </div>
+              
+              <!-- Main Headline -->
+              <h3 class="text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-white leading-[1.12] tracking-tight mb-3 sm:mb-4">
+                Where Comfort<br>Meets Confidence
+              </h3>
+              
+              <!-- Subtitle Copy -->
+              <p class="text-purple-100/90 text-sm sm:text-base font-normal max-w-sm lg:max-w-[262px] mx-auto lg:mx-0 mb-6 sm:mb-8 leading-relaxed">
+                Elevate your everyday look with pieces that speak you. Handcrafted fabrics made for all-day elegance.
+              </p>
+              
+              <!-- Pill CTA Button -->
+              <a class="btn-neo inline-flex items-center gap-3 pl-7 pr-2 py-2 text-white rounded-full font-semibold text-sm group" href="#new-in">
+                <span>Explore Now</span>
+                <span class="w-9 h-9 rounded-full bg-gradient-to-br from-[#9b7bff] to-brand-magenta flex items-center justify-center group-hover:-rotate-45 transition-transform duration-300">
+                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                  </svg>
+                </span>
+              </a>
+            </div>
+
+            <!-- Social Proof Pill in Bottom Left (Desktop) -->
+            <div class="mt-8 lg:mt-24 hidden lg:block">
+              <div class="glass-pill rounded-full p-2 pr-5 inline-flex items-center space-x-3.5 shadow-lg shadow-purple-950/10">
+                <div class="flex -space-x-2.5 overflow-hidden pl-1">
+                  <img alt="Customer avatar" class="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMECcdS7TV5biHfFSqQo7On2KiOwuWMhweVHnF1QTFCmqm_8gB4lwby6bSbMnTK0nV5GGi9YtGFa8TiFiYQui0t4ZzhyVZiqBLwce42-fnNMSpEakt45iEXDiavJ_IFZdpyK6K5F84DqXtDkB6P1xq0HmL8pPr7dbtJ-zQB2L8v25wWfygOL4ZrrurkLAgbofECslfXXMGylDCrHXAjgq7TQbNW6YZjErK_uS2gUYy-VCDljBf6SN3">
+                  <img alt="Customer avatar" class="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrQJjv_rodLyZRibpJkkO7cryPcwlA-gu_ojaySExG_oPe6LEAYP0zIA2dXjoMtH6IMZGcny1984LxNx8qEf07DCkjqyIVu0VM0jFzeT10pxNvP8bASnsHQ5E6x-MRNIFpefd7ALZqRC40vhwfmh94n3kfXWSMa7ORyE-fp3jrEPBZNmFI4UjdYvIg02AZmsEm1IXfEmD8WDCVaB4RFjtYWDoaa1h99oFgZ-UIIU4qo-dpi4S95HDi">
+                  <img alt="Customer avatar" class="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBt7BDme2LkqeDj75qgminG0HA9M0jVK2pnpsnAhbnKmOC7mek1-9oQ4y2sTh3moS0cozzGFA8NEURyaBUi4uUhqA3HfahEcU5Kx0QCp_NEpE2xVsWYTTnx1jgmzSfTZEUGZ6QWLEVSqEcm58RFOsx59GeKJYec4k7zk32Rv76GlZIzsZ8uOscet8FnRN5rpwX4ubqL7HNP8nDjCvb_NObZw6AJJL9TZiT8msFN9SV5zgQa-1X8tZEA">
+                </div>
+                <div class="flex items-center space-x-2">
+                  <span class="text-xs font-semibold text-white tracking-tight">Loved by 239K+ on TikTok</span>
+                  <span class="text-white/80 text-xs">♡</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CENTER COLUMN (Span 4) reserved for absolute model alignment on desktop -->
+          <div class="hidden lg:block lg:col-span-4 h-full pointer-events-none"></div>
+
+          <!-- RIGHT PROMOTIONAL COLUMN (Span 4) -->
+          <div class="lg:col-span-4 flex flex-col items-center lg:items-end justify-between h-full pt-2">
+            
+            <!-- Three Brand Value Indicators -->
+            <div class="hidden sm:flex items-stretch gap-2 text-white text-center pb-4 lg:pb-6">
+              <!-- Indicator 1 -->
+              <div class="feature-chip">
+                <svg class="w-5 h-5 text-white/95" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2l3.5 2.5 4.5.5-1 4.5 3 3.5-3 3.5 1 4.5-4.5.5L12 24l-3.5-2.5-4.5-.5 1-4.5-3-3.5 3-3.5-1-4.5 4.5-.5z"></path>
+                </svg>
+                <span class="text-[11px] font-medium leading-tight text-white/90">Premium<br>Quality</span>
+              </div>
+              <!-- Indicator 2 -->
+              <div class="feature-chip">
+                <svg class="w-5 h-5 text-white/95" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A9.49 9.49 0 0 0 12 21a9.54 9.54 0 0 0 9-9.5c0-1.88-.5-3.65-1.39-5.17L17 8z"></path>
+                </svg>
+                <span class="text-[11px] font-medium leading-tight text-white/90">Sustainable<br>Fashion</span>
+              </div>
+              <!-- Indicator 3 -->
+              <div class="feature-chip">
+                <svg class="w-5 h-5 text-white/95" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2L4 8l8 14 8-14-8-6zm0 3.2L16.4 8H7.6L12 5.2zM6.5 9.5h11l-5.5 9.6-5.5-9.6z"></path>
+                </svg>
+                <span class="text-[11px] font-medium leading-tight text-white/90">Limited<br>Edition</span>
+              </div>
+            </div>
+
+            <!-- Featured Look Product Card (Desktop) -->
+            <div class="glass-card hidden lg:block w-full max-w-[240px] rounded-[28px] p-3 shadow-2xl shadow-purple-950/30 transition-all duration-500 hover:-translate-y-1.5 hover:rotate-[-1deg] mt-6 lg:mt-auto">
+              <p class="text-xs font-bold text-neutral-400 mb-2 px-1">Featured Look</p>
+              
+              <!-- Product Image Frame -->
+              <div class="w-full h-44 rounded-2xl overflow-hidden bg-neutral-100 relative group">
+                <img alt="Graffiti Violet Hoodie" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmIyL9ZnMa7biaXRu_Vv5hKo1MuYWLqWRuTl-quk5m4FQKFTdnfnPFDpQSWWqXv7V7LB64MLFp9a0yCi4mHXh9WQDBkOGH8mEaWBx6ts8stHXkeBQsNy2opfp410XbE8aADBKqluYUpLAUUjxcfwBEw7j0dGeoGULmtGMUpSaK8WXlrva7pTjfbEcBruvL3VXQhidAkklgsIpNtCEYfRODT7NW1scKguP_mWPOoWWFECzxZWGZODyP">
+                <span class="absolute top-2 right-2 bg-black/60 text-white text-[10px] font-semibold px-2 py-0.5 rounded-full backdrop-blur-sm">
+                  Trending
+                </span>
+              </div>
+              
+              <!-- Product Details -->
+              <div class="pt-3 pb-1 px-1">
+                <h4 class="font-bold text-sm text-neutral-900 leading-tight">Graffiti Hoodie</h4>
+                <p class="text-[11px] text-neutral-500 mt-0.5">Streetwear Essential</p>
+                <div class="flex items-center justify-between mt-3">
+                  <button class="btn-grad w-full py-2.5 px-3 rounded-full text-white text-xs font-bold flex items-center justify-center space-x-2 add-to-cart-btn" data-id="featured-hoodie" data-name="Graffiti Hoodie" data-price="79.99" data-img="https://lh3.googleusercontent.com/aida-public/AB6AXuBmIyL9ZnMa7biaXRu_Vv5hKo1MuYWLqWRuTl-quk5m4FQKFTdnfnPFDpQSWWqXv7V7LB64MLFp9a0yCi4mHXh9WQDBkOGH8mEaWBx6ts8stHXkeBQsNy2opfp410XbE8aADBKqluYUpLAUUjxcfwBEw7j0dGeoGULmtGMUpSaK8WXlrva7pTjfbEcBruvL3VXQhidAkklgsIpNtCEYfRODT7NW1scKguP_mWPOoWWFECzxZWGZODyP">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    </svg>
+                    <span>$79.99</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CENTER HERO MODELS (Desktop: Her head exceeds 120px above the purple box!) -->
+        <div class="hidden lg:flex absolute left-1/2 -translate-x-1/2 bottom-0 w-full max-w-[850px] z-30 pointer-events-none select-none justify-center items-end">
+          <div class="relative w-full h-full flex items-end justify-center">
+            
+            <!-- Left Model: Beige Summer Dress -->
+            <div class="absolute left-[4%] sm:left-[8%] lg:left-[7%] bottom-0 w-[240px] sm:w-[310px] lg:w-[250px] z-10 flex items-end">
+              <img alt="STYLE 365 model in the mocha smocked dress" class="w-full h-auto max-h-[580px] lg:max-h-[640px] object-contain drop-shadow-[0_20px_35px_rgba(40,10,60,0.35)] filter contrast-105" src="assets/tiktok/hero-mocha.webp" decoding="async">
+            </div>
+
+            <!-- Center Model: Blue & White Summer Floral Set (Rises 120px above the purple box top!) -->
+            <div class="relative z-20 flex items-end -mb-1">
+              <img alt="STYLE 365 model in the blue blossom co-ord set" class="w-[270px] sm:w-[350px] lg:w-[395px] h-auto max-h-[680px] lg:max-h-[640px] object-contain drop-shadow-[0_25px_40px_rgba(40,10,60,0.45)] filter contrast-105" src="assets/tiktok/hero-blossom.webp" decoding="async">
+            </div>
+
+            <!-- Right Model: Vibrant Magenta Maxi Dress -->
+            <div class="absolute right-[4%] sm:right-[8%] lg:right-[10%] bottom-0 w-[240px] sm:w-[310px] lg:w-[255px] z-10 flex items-end">
+              <img alt="STYLE 365 model in the magenta dress" class="w-full h-auto max-h-[580px] lg:max-h-[640px] object-contain drop-shadow-[0_20px_35px_rgba(40,10,60,0.35)] filter contrast-105" src="assets/tiktok/hero-magenta.webp" decoding="async">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MOBILE / TABLET COMPANION STRIP -->
+      <div class="block lg:hidden mt-4">
+        
+        <!-- Value Indicators Strip -->
+        <div class="glass-card grid grid-cols-3 gap-2 px-3 py-3 rounded-2xl text-center shadow-sm">
+          <div class="flex flex-col items-center justify-center space-y-1">
+            <span class="w-7 h-7 rounded-full bg-gradient-to-br from-brand-purple to-brand-magenta text-white text-[11px] font-bold flex items-center justify-center shadow-md shadow-purple-500/30">✦</span>
+            <span class="text-[10px] font-semibold text-neutral-700 leading-tight">Premium<br>Quality</span>
+          </div>
+          <div class="flex flex-col items-center justify-center space-y-1 border-l border-neutral-200">
+            <span class="w-7 h-7 rounded-full bg-gradient-to-br from-brand-purple to-brand-magenta text-white text-[11px] font-bold flex items-center justify-center shadow-md shadow-purple-500/30">✦</span>
+            <span class="text-[10px] font-semibold text-neutral-700 leading-tight">Sustainable<br>Fashion</span>
+          </div>
+          <div class="flex flex-col items-center justify-center space-y-1 border-l border-neutral-200">
+            <span class="w-7 h-7 rounded-full bg-gradient-to-br from-brand-purple to-brand-magenta text-white text-[11px] font-bold flex items-center justify-center shadow-md shadow-purple-500/30">✦</span>
+            <span class="text-[10px] font-semibold text-neutral-700 leading-tight">Limited<br>Edition</span>
+          </div>
+        </div>
+
+        <!-- Mobile Social Proof Banner -->
+        <div class="glass-card mt-3 flex items-center justify-between rounded-2xl p-3 shadow-sm">
+          <div class="flex items-center space-x-2">
+            <div class="flex -space-x-2 overflow-hidden pl-0.5">
+              <img alt="Customer avatar" class="inline-block h-6 w-6 rounded-full ring-2 ring-white object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMECcdS7TV5biHfFSqQo7On2KiOwuWMhweVHnF1QTFCmqm_8gB4lwby6bSbMnTK0nV5GGi9YtGFa8TiFiYQui0t4ZzhyVZiqBLwce42-fnNMSpEakt45iEXDiavJ_IFZdpyK6K5F84DqXtDkB6P1xq0HmL8pPr7dbtJ-zQB2L8v25wWfygOL4ZrrurkLAgbofECslfXXMGylDCrHXAjgq7TQbNW6YZjErK_uS2gUYy-VCDljBf6SN3">
+              <img alt="Customer avatar" class="inline-block h-6 w-6 rounded-full ring-2 ring-white object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrQJjv_rodLyZRibpJkkO7cryPcwlA-gu_ojaySExG_oPe6LEAYP0zIA2dXjoMtH6IMZGcny1984LxNx8qEf07DCkjqyIVu0VM0jFzeT10pxNvP8bASnsHQ5E6x-MRNIFpefd7ALZqRC40vhwfmh94n3kfXWSMa7ORyE-fp3jrEPBZNmFI4UjdYvIg02AZmsEm1IXfEmD8WDCVaB4RFjtYWDoaa1h99oFgZ-UIIU4qo-dpi4S95HDi">
+            </div>
+            <span class="text-[11px] font-semibold text-neutral-800 tracking-tight">Loved by 239K+ on TikTok ♡</span>
+          </div>
+          <span class="text-[10px] font-bold text-brand-purple uppercase tracking-wider">4.9 ★ Rating</span>
+        </div>
+
+        <!-- Mobile Horizontal Featured Look Card -->
+        <div class="glass-card mt-3 w-full rounded-2xl p-3 shadow-md flex items-center space-x-3">
+          <div class="w-16 h-16 rounded-xl overflow-hidden bg-neutral-100 flex-shrink-0 relative">
+            <img alt="Graffiti Violet Hoodie" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmIyL9ZnMa7biaXRu_Vv5hKo1MuYWLqWRuTl-quk5m4FQKFTdnfnPFDpQSWWqXv7V7LB64MLFp9a0yCi4mHXh9WQDBkOGH8mEaWBx6ts8stHXkeBQsNy2opfp410XbE8aADBKqluYUpLAUUjxcfwBEw7j0dGeoGULmtGMUpSaK8WXlrva7pTjfbEcBruvL3VXQhidAkklgsIpNtCEYfRODT7NW1scKguP_mWPOoWWFECzxZWGZODyP">
+            <span class="absolute top-1 right-1 bg-black/60 text-white text-[9px] font-semibold px-1.5 py-0.5 rounded-full">Trending</span>
+          </div>
+          <div class="flex-1 min-w-0">
+            <p class="text-[10px] font-bold text-neutral-400 uppercase tracking-wider">Featured Look</p>
+            <h4 class="font-bold text-xs text-neutral-900 truncate">Graffiti Violet Hoodie</h4>
+            <p class="text-[10px] text-neutral-500">Streetwear Essential</p>
+          </div>
+          <div class="flex flex-col items-end space-y-1.5">
+            <span class="text-xs font-bold text-neutral-900">$79.99</span>
+            <button class="btn-grad py-1.5 px-3.5 rounded-full text-white text-[11px] font-bold flex items-center space-x-1 add-to-cart-btn" data-id="featured-hoodie" data-name="Graffiti Violet Hoodie" data-price="79.99" data-img="https://lh3.googleusercontent.com/aida-public/AB6AXuBmIyL9ZnMa7biaXRu_Vv5hKo1MuYWLqWRuTl-quk5m4FQKFTdnfnPFDpQSWWqXv7V7LB64MLFp9a0yCi4mHXh9WQDBkOGH8mEaWBx6ts8stHXkeBQsNy2opfp410XbE8aADBKqluYUpLAUUjxcfwBEw7j0dGeoGULmtGMUpSaK8WXlrva7pTjfbEcBruvL3VXQhidAkklgsIpNtCEYfRODT7NW1scKguP_mWPOoWWFECzxZWGZODyP">
+              <span>+ Add</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- CURATED COLLECTIONS -->
+  <!-- ========================================================================= -->
+  <section class="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 py-12 sm:py-16" data-purpose="curated-collections" id="collections">
+    <div data-reveal class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 sm:mb-10">
+      <div>
+        <span class="eyebrow">Seasonal Highlights</span>
+        <h2 class="font-display text-[2rem] leading-[1.05] sm:text-5xl font-extrabold text-neutral-900 tracking-tight mt-3">Curated Collections</h2>
+      </div>
+      <a class="self-start md:self-auto text-sm font-bold text-neutral-900 hover:text-brand-purple transition-colors inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/70 border border-white shadow-sm group" href="#all-collections">
+        <span>View all 12 series</span>
+        <span class="transform transition-transform group-hover:translate-x-1">→</span>
+      </a>
+    </div>
+
+    <!-- Collection Cards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
+      
+      <!-- Collection Card 1 -->
+      <div data-reveal class="card-neo group relative rounded-[28px] overflow-hidden flex flex-col">
+        <div class="img-veil h-72 sm:h-80 w-full overflow-hidden bg-neutral-200 relative rounded-t-[28px]">
+          <img alt="Everyday Silks Collection" loading="lazy" class="w-full h-full object-cover object-[center_30%] transition-transform duration-700 group-hover:scale-105" src="assets/tiktok/umbrella-maxi.webp">
+          <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-md text-brand-purple font-bold text-xs px-3 py-1 rounded-full shadow-sm">
+            Trending Drop
+          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-semibold text-brand-purple uppercase tracking-wider">01 / Edition</span>
+            <h3 class="text-xl font-bold text-neutral-900 mt-1">Everyday Silks</h3>
+            <p class="text-xs text-neutral-500 mt-1 leading-relaxed">Effortless fluid fits tailored for breathable luxury and relaxed confidence.</p>
+          </div>
+          <div class="mt-6 flex items-center justify-between pt-4 border-t border-neutral-100">
+            <span class="text-xs font-bold text-neutral-900">From $64.00</span>
+            <a href="#shop" class="w-10 h-10 rounded-full bg-neutral-100 flex items-center justify-center text-neutral-800 group-hover:bg-gradient-to-br group-hover:from-brand-purple group-hover:to-brand-magenta group-hover:text-white group-hover:rotate-45 transition-all duration-300 shadow-sm" aria-label="Shop collection">
+              ↗
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Collection Card 2 -->
+      <div data-reveal class="card-neo group relative rounded-[28px] overflow-hidden flex flex-col">
+        <div class="img-veil h-72 sm:h-80 w-full overflow-hidden bg-neutral-200 relative rounded-t-[28px]">
+          <img alt="Vibrant Evening Collection" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8656eDIfo0ditsUyVOhGl_MwXdC2mlZm0UIckWYp-Xnh6F5p5umEXvhBUgMtg-c2bxeg4dTPtlbkrEa3Vp2emOPG9i4CehlU8KXS-i1J-NB0QKS9W4bBv4YOSJ0yohOAWD7wA5oHRqqNO9AeHHbeHfi1fk2cr6qlb8ca0uWbPMWztpyw2WkP3HAZ3TlTxdJx-CzoAoWlhBhmizXVWO2mJ44qlTBlLbOlTa1s3izP37oFBZB8RWFF2">
+          <span class="absolute top-4 left-4 bg-brand-magenta text-white font-bold text-xs px-3 py-1 rounded-full shadow-sm">
+            Exclusive
+          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-semibold text-brand-purple uppercase tracking-wider">02 / Edition</span>
+            <h3 class="text-xl font-bold text-neutral-900 mt-1">Vibrant Evening</h3>
+            <p class="text-xs text-neutral-500 mt-1 leading-relaxed">Bold magenta, deep violet and jewel tones handcrafted for unforgettable nights out.</p>
+          </div>
+          <div class="mt-6 flex items-center justify-between pt-4 border-t border-neutral-100">
+            <span class="text-xs font-bold text-neutral-900">From $89.00</span>
+            <a href="#shop" class="w-10 h-10 rounded-full bg-neutral-100 flex items-center justify-center text-neutral-800 group-hover:bg-gradient-to-br group-hover:from-brand-purple group-hover:to-brand-magenta group-hover:text-white group-hover:rotate-45 transition-all duration-300 shadow-sm" aria-label="Shop collection">
+              ↗
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Collection Card 3 -->
+      <div data-reveal class="card-neo group relative rounded-[28px] overflow-hidden flex flex-col">
+        <div class="img-veil h-72 sm:h-80 w-full overflow-hidden bg-neutral-200 relative rounded-t-[28px]">
+          <img alt="Casual Chic Collection" loading="lazy" class="w-full h-full object-cover object-[center_25%] transition-transform duration-700 group-hover:scale-105" src="assets/tiktok/mocha-smock.webp">
+          <span class="absolute top-4 left-4 bg-neutral-900 text-white font-bold text-xs px-3 py-1 rounded-full shadow-sm">
+            Essentials
+          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-semibold text-brand-purple uppercase tracking-wider">03 / Edition</span>
+            <h3 class="text-xl font-bold text-neutral-900 mt-1">Casual Chic</h3>
+            <p class="text-xs text-neutral-500 mt-1 leading-relaxed">Minimalist oversized streetwear essentials engineered for dynamic city routines.</p>
+          </div>
+          <div class="mt-6 flex items-center justify-between pt-4 border-t border-neutral-100">
+            <span class="text-xs font-bold text-neutral-900">From $49.00</span>
+            <a href="#shop" class="w-10 h-10 rounded-full bg-neutral-100 flex items-center justify-center text-neutral-800 group-hover:bg-gradient-to-br group-hover:from-brand-purple group-hover:to-brand-magenta group-hover:text-white group-hover:rotate-45 transition-all duration-300 shadow-sm" aria-label="Shop collection">
+              ↗
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- TRENDING PIECES (FRESH DROPS) -->
+  <!-- ========================================================================= -->
+  <section class="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 py-10 sm:py-14" data-purpose="trending-products" id="new-in">
+    <div data-reveal class="text-center max-w-xl mx-auto mb-10 sm:mb-12">
+      <span class="eyebrow">Fresh Drops</span>
+      <h2 class="font-display text-[2rem] leading-[1.05] sm:text-5xl font-extrabold text-neutral-900 tracking-tight mt-3">Trending Pieces</h2>
+      <p class="text-sm text-neutral-500 mt-2">Crafted with precision, designed to inspire everyday self-expression.</p>
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+      
+      <!-- Product Item 1 -->
+      <div data-reveal class="card-neo rounded-3xl p-2 sm:p-3 group flex flex-col justify-between">
+        <div class="img-veil w-full aspect-[3/4] rounded-2xl overflow-hidden bg-neutral-100 relative">
+          <img alt="Magenta Evening Maxi" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/tiktok/magenta-maxi-sm.webp">
+          <button aria-label="Add to wishlist" class="wishlist-btn absolute top-2 right-2 sm:top-2.5 sm:right-2.5 w-9 h-9 rounded-full bg-white/80 backdrop-blur-md hover:bg-white text-neutral-700 flex items-center justify-center transition-all shadow-sm hover:scale-110" type="button" data-product="Magenta Evening Maxi">
+            <svg class="w-4 h-4 text-neutral-600 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="mt-3 px-1">
+          <h4 class="text-sm font-bold text-neutral-800 truncate">Magenta Evening Maxi</h4>
+          <p class="text-xs text-neutral-500 mt-0.5">Flowing Midi Silhouette</p>
+          <div class="flex items-center justify-between mt-3 pt-2.5 border-t border-neutral-100/80">
+            <span class="text-sm sm:text-base font-extrabold text-neutral-900">$89.99</span>
+            <button class="px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-neutral-900 hover:bg-brand-purple text-white text-xs font-bold transition-all hover:shadow-lg hover:shadow-purple-500/30 active:scale-95 add-to-cart-btn" data-id="p1" data-name="Magenta Evening Maxi" data-price="89.99" data-img="assets/tiktok/magenta-maxi-sm.webp">
+              + Add
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Item 2 -->
+      <div data-reveal class="card-neo rounded-3xl p-2 sm:p-3 group flex flex-col justify-between">
+        <div class="img-veil w-full aspect-[3/4] rounded-2xl overflow-hidden bg-neutral-100 relative">
+          <img alt="Rose Bloom Crop Top" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/tiktok/rose-bloom-top-sm.webp">
+          <button aria-label="Add to wishlist" class="wishlist-btn absolute top-2 right-2 sm:top-2.5 sm:right-2.5 w-9 h-9 rounded-full bg-white/80 backdrop-blur-md hover:bg-white text-neutral-700 flex items-center justify-center transition-all shadow-sm hover:scale-110" type="button" data-product="Rose Bloom Crop Top">
+            <svg class="w-4 h-4 text-neutral-600 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="mt-3 px-1">
+          <h4 class="text-sm font-bold text-neutral-800 truncate">Rose Bloom Crop Top</h4>
+          <p class="text-xs text-neutral-500 mt-0.5">Floral Rib Knit</p>
+          <div class="flex items-center justify-between mt-3 pt-2.5 border-t border-neutral-100/80">
+            <span class="text-sm sm:text-base font-extrabold text-neutral-900">$114.00</span>
+            <button class="px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-neutral-900 hover:bg-brand-purple text-white text-xs font-bold transition-all hover:shadow-lg hover:shadow-purple-500/30 active:scale-95 add-to-cart-btn" data-id="p2" data-name="Rose Bloom Crop Top" data-price="114.00" data-img="assets/tiktok/rose-bloom-top-sm.webp">
+              + Add
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Item 3 -->
+      <div data-reveal class="card-neo rounded-3xl p-2 sm:p-3 group flex flex-col justify-between">
+        <div class="img-veil w-full aspect-[3/4] rounded-2xl overflow-hidden bg-neutral-100 relative">
+          <img alt="Blue Blossom Co-ord" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/tiktok/blue-blossom-set-sm.webp">
+          <button aria-label="Add to wishlist" class="wishlist-btn absolute top-2 right-2 sm:top-2.5 sm:right-2.5 w-9 h-9 rounded-full bg-white/80 backdrop-blur-md hover:bg-white text-neutral-700 flex items-center justify-center transition-all shadow-sm hover:scale-110" type="button" data-product="Blue Blossom Co-ord">
+            <svg class="w-4 h-4 text-neutral-600 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="mt-3 px-1">
+          <h4 class="text-sm font-bold text-neutral-800 truncate">Blue Blossom Co-ord</h4>
+          <p class="text-xs text-neutral-500 mt-0.5">Two-Piece Summer Set</p>
+          <div class="flex items-center justify-between mt-3 pt-2.5 border-t border-neutral-100/80">
+            <span class="text-sm sm:text-base font-extrabold text-neutral-900">$54.50</span>
+            <button class="px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-neutral-900 hover:bg-brand-purple text-white text-xs font-bold transition-all hover:shadow-lg hover:shadow-purple-500/30 active:scale-95 add-to-cart-btn" data-id="p3" data-name="Blue Blossom Co-ord" data-price="54.50" data-img="assets/tiktok/blue-blossom-set-sm.webp">
+              + Add
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Item 4 -->
+      <div data-reveal class="card-neo rounded-3xl p-2 sm:p-3 group flex flex-col justify-between">
+        <div class="img-veil w-full aspect-[3/4] rounded-2xl overflow-hidden bg-neutral-100 relative">
+          <img alt="Midnight Smocked Maxi" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/tiktok/midnight-maxi-sm.webp">
+          <button aria-label="Add to wishlist" class="wishlist-btn absolute top-2 right-2 sm:top-2.5 sm:right-2.5 w-9 h-9 rounded-full bg-white/80 backdrop-blur-md hover:bg-white text-neutral-700 flex items-center justify-center transition-all shadow-sm hover:scale-110" type="button" data-product="Midnight Smocked Maxi">
+            <svg class="w-4 h-4 text-neutral-600 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="mt-3 px-1">
+          <h4 class="text-sm font-bold text-neutral-800 truncate">Midnight Smocked Maxi</h4>
+          <p class="text-xs text-neutral-500 mt-0.5">Puff Sleeve Dress</p>
+          <div class="flex items-center justify-between mt-3 pt-2.5 border-t border-neutral-100/80">
+            <span class="text-sm sm:text-base font-extrabold text-neutral-900">$79.99</span>
+            <button class="px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-neutral-900 hover:bg-brand-purple text-white text-xs font-bold transition-all hover:shadow-lg hover:shadow-purple-500/30 active:scale-95 add-to-cart-btn" data-id="p4" data-name="Midnight Smocked Maxi" data-price="79.99" data-img="assets/tiktok/midnight-maxi-sm.webp">
+              + Add
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- AS SEEN ON TIKTOK (real frames from @style..365) -->
+  <!-- ========================================================================= -->
+  <section class="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 py-10 sm:py-14" data-purpose="tiktok-feed" id="tiktok">
+    <div data-reveal class="tiktok-panel rounded-[32px] sm:rounded-[40px] p-4 sm:p-8 lg:p-10 relative overflow-hidden">
+
+      <!-- Header row -->
+      <div class="relative z-10 flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-6 sm:mb-8 px-1">
+        <div>
+          <span class="eyebrow">As Seen on TikTok</span>
+          <h2 class="font-display text-[2rem] leading-[1.05] sm:text-5xl font-extrabold text-neutral-900 tracking-tight mt-3">Real Looks.<br class="sm:hidden"> Real Vibes.</h2>
+          <p class="text-sm text-neutral-500 mt-2 max-w-md">Straight from our feed, shot in the hills and styled by our community.</p>
+        </div>
+
+        <!-- Profile chip -->
+        <a href="https://www.tiktok.com/@style..365" target="_blank" rel="noopener noreferrer" class="glass-card group self-start lg:self-auto flex items-center gap-3 sm:gap-4 rounded-full p-1.5 pr-2 shadow-lg shadow-purple-900/10 hover:-translate-y-0.5 transition-transform duration-300">
+          <span class="logo-ring shrink-0">
+            <img alt="STYLE 365 on TikTok" class="h-11 w-11 rounded-full object-cover ring-2 ring-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATA2a5bHHXZGDkH1ZYFTyQvVl0DCXWbpAeCH1iKyPUcU4qvWTIP0zot-YwHrfYhUYTSypTLoJuz-6jOoztGYJYsLsA2rVxuRt6aW42AbqSvS2WVA7oaURh6G-sLzUby1ymO_rmAYSU9YbEuf_CmUUD3c0MWcaanAK6tq1Qw0OE5s5cTmRQqRZ61Ge9a5puwB8FikczRXbbfHMWaFNFAupzcnkQsyGiJbDn9ppZRBhII1jSUpCUWF4PgLz8hXjDdCuV1w">
+          </span>
+          <span class="flex flex-col leading-tight">
+            <span class="text-sm font-extrabold text-neutral-900">@style..365</span>
+            <span class="text-[11px] font-semibold text-neutral-500"><b class="text-neutral-900">239.3K</b> followers · <b class="text-neutral-900">6.8M</b> likes</span>
+          </span>
+          <span class="btn-neo ml-1 sm:ml-2 h-10 px-4 rounded-full text-white text-xs font-bold flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            Follow
+          </span>
+        </a>
+      </div>
+
+      <!-- Reel rail: swipe on mobile, six-up grid on desktop -->
+      <div class="reel-rail relative z-10 -mx-4 px-4 sm:mx-0 sm:px-0 flex lg:grid lg:grid-cols-6 gap-3 sm:gap-4 overflow-x-auto lg:overflow-visible snap-x snap-mandatory">
+        <a href="https://www.tiktok.com/@style..365/video/7700477870853852436" target="_blank" rel="noopener noreferrer" class="reel-card group" aria-label="Watch the magenta dress video on TikTok">
+          <img alt="STYLE 365 magenta dress in the tea hills" loading="lazy" src="assets/tiktok/magenta-maxi-sm.webp">
+          <span class="reel-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="reel-meta"><span class="reel-views"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>38.7K</span><span class="reel-tag">Magenta</span></span>
+        </a>
+        <a href="https://www.tiktok.com/@style..365/video/7700432457774026005" target="_blank" rel="noopener noreferrer" class="reel-card group" aria-label="Watch the blue blossom co-ord video on TikTok">
+          <img alt="STYLE 365 blue blossom co-ord set" loading="lazy" src="assets/tiktok/blue-blossom-set-sm.webp">
+          <span class="reel-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="reel-meta"><span class="reel-views"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>31.4K</span><span class="reel-tag">Co-ord</span></span>
+        </a>
+        <a href="https://www.tiktok.com/@style..365/video/7700167468907580692" target="_blank" rel="noopener noreferrer" class="reel-card group" aria-label="Watch the rose bloom top video on TikTok">
+          <img alt="STYLE 365 rose bloom crop top" loading="lazy" src="assets/tiktok/rose-bloom-top-sm.webp">
+          <span class="reel-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="reel-meta"><span class="reel-views"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>16.4K</span><span class="reel-tag">Tops</span></span>
+        </a>
+        <a href="https://www.tiktok.com/@style..365/video/7700219232293850389" target="_blank" rel="noopener noreferrer" class="reel-card group" aria-label="Watch the midnight maxi video on TikTok">
+          <img alt="STYLE 365 midnight smocked maxi dress" loading="lazy" src="assets/tiktok/midnight-maxi-sm.webp">
+          <span class="reel-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="reel-meta"><span class="reel-views"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>12.4K</span><span class="reel-tag">Maxi</span></span>
+        </a>
+        <a href="https://www.tiktok.com/@style..365/video/7700093661178088724" target="_blank" rel="noopener noreferrer" class="reel-card group" aria-label="Watch the umbrella maxi video on TikTok">
+          <img alt="STYLE 365 beige maxi dress with umbrella" loading="lazy" src="assets/tiktok/umbrella-maxi-sm.webp">
+          <span class="reel-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="reel-meta"><span class="reel-views"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>10.3K</span><span class="reel-tag">Frocks</span></span>
+        </a>
+        <a href="https://www.tiktok.com/@style..365/video/7700556295144869141" target="_blank" rel="noopener noreferrer" class="reel-card group" aria-label="Watch the mocha smock dress video on TikTok">
+          <img alt="STYLE 365 mocha smocked dress" loading="lazy" src="assets/tiktok/mocha-smock-sm.webp">
+          <span class="reel-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="reel-meta"><span class="reel-views"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>4.5K</span><span class="reel-tag">New</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- BRAND STORY SECTION -->
+  <!-- ========================================================================= -->
+  <section class="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 py-12 sm:py-16" data-purpose="brand-story" id="about">
+    <div data-reveal class="story-panel rounded-[32px] sm:rounded-[40px] text-white p-7 sm:p-10 lg:p-14 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-10 shadow-2xl shadow-purple-950/30">
+      <div class="grid-lines"></div>
+      
+      <!-- Background subtle purple glow -->
+      <div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-brand-purple/20 blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-xl z-10 text-center md:text-left">
+        <span class="eyebrow on-dark">About STYLE 365</span>
+        <h2 class="font-display text-[1.75rem] leading-[1.1] sm:text-4xl lg:text-5xl font-extrabold mt-4 tracking-tight">Fashion Crafted For Every Day of the Year.</h2>
+        <p class="text-neutral-300 text-xs sm:text-sm mt-4 leading-relaxed">
+          At STYLE 365, we believe true elegance is born where uncompromising comfort meets fearless confidence. Designed for those who define their own path and wear their individuality boldly.
+        </p>
+        
+        <!-- Metrics -->
+        <div class="mt-6 sm:mt-8 grid grid-cols-3 gap-2 sm:gap-6 border-t border-neutral-800 pt-5 sm:pt-0 sm:border-t-0 sm:flex sm:items-center text-center md:text-left">
+          <div>
+            <p class="metric-num font-display text-2xl sm:text-4xl font-extrabold">100%</p>
+            <p class="text-[10px] sm:text-xs text-neutral-400 mt-0.5">Sustainable Cotton</p>
+          </div>
+          <div class="border-l border-neutral-700 pl-4 sm:pl-6">
+            <p class="metric-num font-display text-2xl sm:text-4xl font-extrabold">239K+</p>
+            <p class="text-[10px] sm:text-xs text-neutral-400 mt-0.5">TikTok Family</p>
+          </div>
+          <div class="border-l border-neutral-700 pl-4 sm:pl-6">
+            <p class="metric-num font-display text-2xl sm:text-4xl font-extrabold">365</p>
+            <p class="text-[10px] sm:text-xs text-neutral-400 mt-0.5">Days of Expression</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Brand circular emblem presentation -->
+      <div class="z-10 flex flex-col items-center">
+        <div class="emblem-ring p-2 sm:p-2.5 rounded-full bg-white/10 backdrop-blur-md ring-1 ring-white/25 shadow-[0_0_60px_-10px_rgba(155,123,255,0.8)] transform hover:scale-105 transition-transform duration-300">
+          <img alt="STYLE 365 Logo Emblem" class="h-28 w-28 sm:h-36 sm:w-36 rounded-full object-cover shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATA2a5bHHXZGDkH1ZYFTyQvVl0DCXWbpAeCH1iKyPUcU4qvWTIP0zot-YwHrfYhUYTSypTLoJuz-6jOoztGYJYsLsA2rVxuRt6aW42AbqSvS2WVA7oaURh6G-sLzUby1ymO_rmAYSU9YbEuf_CmUUD3c0MWcaanAK6tq1Qw0OE5s5cTmRQqRZ61Ge9a5puwB8FikczRXbbfHMWaFNFAupzcnkQsyGiJbDn9ppZRBhII1jSUpCUWF4PgLz8hXjDdCuV1w">
+        </div>
+        <p class="text-[11px] text-neutral-400 mt-6 font-semibold tracking-[0.2em] uppercase">Official Trademark</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- SITE FOOTER -->
+  <!-- ========================================================================= -->
+  <footer class="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 pt-12 pb-32 lg:pb-16 border-t border-neutral-200/70" data-purpose="site-footer" id="contact">
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-8 sm:gap-10 pb-12">
+      
+      <!-- Brand Summary -->
+      <div class="col-span-2">
+        <div class="flex items-center space-x-3 mb-4">
+          <img alt="STYLE 365 small logo" class="h-10 w-10 rounded-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATA2a5bHHXZGDkH1ZYFTyQvVl0DCXWbpAeCH1iKyPUcU4qvWTIP0zot-YwHrfYhUYTSypTLoJuz-6jOoztGYJYsLsA2rVxuRt6aW42AbqSvS2WVA7oaURh6G-sLzUby1ymO_rmAYSU9YbEuf_CmUUD3c0MWcaanAK6tq1Qw0OE5s5cTmRQqRZ61Ge9a5puwB8FikczRXbbfHMWaFNFAupzcnkQsyGiJbDn9ppZRBhII1jSUpCUWF4PgLz8hXjDdCuV1w">
+          <span class="font-display font-extrabold text-xl tracking-tight text-neutral-900">STYLE 365</span>
+        </div>
+        <p class="text-xs text-neutral-500 max-w-sm leading-relaxed mb-6">
+          Premium lifestyle apparel redefining everyday comfort and bold self-expression. Wear your world with pride.
+        </p>
+        <div class="flex items-center space-x-3 text-xs font-semibold text-neutral-700">
+          <a class="hover:text-brand-purple flex items-center space-x-2 transition-colors py-1 px-3 bg-neutral-100 rounded-full" href="https://tiktok.com/@style..365" rel="noopener noreferrer" target="_blank">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+              <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+            </svg>
+            <span>TikTok: @style..365</span>
+          </a>
+        </div>
+
+        <!-- Order hotlines (from the TikTok bio) -->
+        <div class="mt-5 flex flex-wrap gap-2">
+          <a href="tel:+94713752887" class="hotline-chip">071 375 2887</a>
+          <a href="tel:+94774965442" class="hotline-chip">077 496 5442</a>
+          <a href="tel:+94775828442" class="hotline-chip">077 582 8442</a>
+        </div>
+      </div>
+
+      <!-- Column 1: Links -->
+      <div>
+        <h5 class="text-xs font-bold uppercase tracking-wider text-neutral-900 mb-4">Navigation</h5>
+        <ul class="space-y-2.5 text-xs text-neutral-600 font-medium">
+          <li><a class="hover:text-brand-purple transition-colors" href="#shop">All Products</a></li>
+          <li><a class="hover:text-brand-purple transition-colors" href="#new-in">New Drops</a></li>
+          <li><a class="hover:text-brand-purple transition-colors" href="#collections">Lookbooks</a></li>
+          <li><a class="hover:text-brand-purple transition-colors" href="#collections">Best Sellers</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 2: Support -->
+      <div>
+        <h5 class="text-xs font-bold uppercase tracking-wider text-neutral-900 mb-4">Customer Care</h5>
+        <ul class="space-y-2.5 text-xs text-neutral-600 font-medium">
+          <li><a class="hover:text-brand-purple transition-colors" href="#shipping">Shipping & Delivery</a></li>
+          <li><a class="hover:text-brand-purple transition-colors" href="#returns">Returns Policy</a></li>
+          <li><a class="hover:text-brand-purple transition-colors" href="#size-guide">Size Guide</a></li>
+          <li><a class="hover:text-brand-purple transition-colors" href="#faq">FAQs</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Newsletter -->
+      <div class="col-span-2 md:col-span-1">
+        <h5 class="text-xs font-bold uppercase tracking-wider text-neutral-900 mb-4">Join the Club</h5>
+        <p class="text-xs text-neutral-500 mb-3">Get 10% off your first STYLE 365 drop.</p>
+        <form class="space-y-2" id="newsletterForm">
+          <input class="w-full text-sm px-4 py-3 rounded-2xl bg-white/80 border border-neutral-200 focus:outline-none focus:border-brand-purple focus:ring-4 focus:ring-brand-purple/15 transition-all" placeholder="Enter your email" type="email" required id="newsletterEmail">
+          <button class="btn-grad w-full text-sm font-bold px-4 py-3 text-white rounded-2xl" type="submit">
+            Subscribe
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Bottom copyright -->
+    <div class="pt-6 border-t border-neutral-100 flex flex-col sm:flex-row items-center justify-between text-xs text-neutral-400">
+      <p>© 2026 STYLE 365 Inc. All rights reserved.</p>
+      <div class="flex space-x-6 mt-3 sm:mt-0">
+        <a class="hover:text-neutral-700 transition-colors" href="#privacy">Privacy Policy</a>
+        <a class="hover:text-neutral-700 transition-colors" href="#terms">Terms of Service</a>
+        <a class="hover:text-neutral-700 transition-colors" href="#cookies">Cookie Preferences</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- MOBILE BOTTOM DOCK (app-style navigation, hidden on desktop) -->
+  <!-- ========================================================================= -->
+  <nav aria-label="Quick Navigation" class="lg:hidden fixed inset-x-0 bottom-0 z-40 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pointer-events-none">
+    <div class="dock pointer-events-auto mx-auto max-w-md rounded-full p-1.5 flex items-center gap-1">
+      <a href="#" class="dock-item active" data-dock="home">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 11l9-7 9 7v9a1 1 0 01-1 1h-5v-6h-6v6H4a1 1 0 01-1-1z"></path></svg>
+        <span>Home</span>
+      </a>
+      <a href="#new-in" class="dock-item" data-dock="new-in">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3l2.5 5.5L20 9.5l-4 4 1 5.5-5-2.8L7 19l1-5.5-4-4 5.5-1z"></path></svg>
+        <span>New</span>
+      </a>
+      <button id="dockSearchBtn" type="button" aria-label="Search" class="dock-item dock-cta">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path stroke-linecap="round" d="m21 21-4.35-4.35"></path></svg>
+      </button>
+      <a href="#collections" class="dock-item" data-dock="collections">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"></rect><rect x="14" y="3" width="7" height="7" rx="2"></rect><rect x="3" y="14" width="7" height="7" rx="2"></rect><rect x="14" y="14" width="7" height="7" rx="2"></rect></svg>
+        <span>Edits</span>
+      </a>
+      <button id="dockCartBtn" type="button" aria-label="Open bag" class="dock-item">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+        <span>Bag</span>
+        <span id="dockCartBadge" class="dock-badge">1</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========================================================================= -->
+  <!-- CART DRAWER OVERLAY -->
+  <!-- ========================================================================= -->
+  <div id="cartOverlay" class="fixed inset-0 bg-neutral-900/60 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300">
+    <div id="cartDrawer" class="absolute top-0 right-0 h-full w-full max-w-md bg-white/95 backdrop-blur-xl shadow-2xl flex flex-col transform translate-x-full transition-transform duration-300 ease-in-out sm:rounded-l-[32px] overflow-hidden">
+      
+      <!-- Cart Header -->
+      <div class="p-5 border-b border-neutral-100 flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <h3 class="font-display font-bold text-lg text-neutral-900">Your Bag</h3>
+          <span id="cartItemCountPill" class="text-xs font-bold px-2 py-0.5 bg-brand-softLilac text-brand-darkPurple rounded-full">1</span>
+        </div>
+        <button id="closeCartBtn" aria-label="Close cart" class="w-8 h-8 rounded-full flex items-center justify-center text-neutral-500 hover:text-neutral-800 hover:bg-neutral-100 transition-colors">
+          ✕
+        </button>
+      </div>
+
+      <!-- Cart Items List -->
+      <div id="cartItemsList" class="flex-1 overflow-y-auto p-5 space-y-4">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+
+      <!-- Cart Footer -->
+      <div class="p-5 pb-[max(1.25rem,env(safe-area-inset-bottom))] border-t border-neutral-100 bg-[#FAF9FC]/80">
+        <div class="flex items-center justify-between text-sm mb-2">
+          <span class="text-neutral-500">Subtotal</span>
+          <span id="cartSubtotal" class="font-bold text-neutral-900">$79.99</span>
+        </div>
+        <div class="flex items-center justify-between text-xs text-neutral-400 mb-4">
+          <span>Shipping calculated at checkout</span>
+          <span class="text-green-600 font-semibold">Free Delivery Eligible</span>
+        </div>
+        <button id="checkoutBtn" class="btn-grad w-full py-4 text-white text-sm font-bold rounded-full flex items-center justify-center space-x-2">
+          <span>Proceed to Checkout</span>
+          <span>→</span>
+        </button>
+        <button id="continueShoppingBtn" class="w-full py-2.5 mt-2 text-xs font-bold text-neutral-600 hover:text-neutral-900 transition-colors">
+          Continue Browsing
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- MOBILE MENU SLIDE DRAWER -->
+  <!-- ========================================================================= -->
+  <div id="mobileDrawerOverlay" class="fixed inset-0 bg-neutral-900/60 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300">
+    <div id="mobileDrawer" class="absolute top-0 left-0 h-full w-[85%] max-w-sm bg-white/95 backdrop-blur-xl shadow-2xl flex flex-col transform -translate-x-full transition-transform duration-300 ease-in-out p-6 rounded-r-[32px]">
+      
+      <!-- Drawer Header -->
+      <div class="flex items-center justify-between pb-6 border-b border-neutral-100">
+        <div class="flex items-center space-x-3">
+          <img alt="STYLE 365 Logo" class="h-10 w-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATA2a5bHHXZGDkH1ZYFTyQvVl0DCXWbpAeCH1iKyPUcU4qvWTIP0zot-YwHrfYhUYTSypTLoJuz-6jOoztGYJYsLsA2rVxuRt6aW42AbqSvS2WVA7oaURh6G-sLzUby1ymO_rmAYSU9YbEuf_CmUUD3c0MWcaanAK6tq1Qw0OE5s5cTmRQqRZ61Ge9a5puwB8FikczRXbbfHMWaFNFAupzcnkQsyGiJbDn9ppZRBhII1jSUpCUWF4PgLz8hXjDdCuV1w">
+          <span class="font-display font-extrabold text-lg tracking-tight text-neutral-900">STYLE 365</span>
+        </div>
+        <button id="closeMobileMenuBtn" aria-label="Close menu" class="w-8 h-8 rounded-full flex items-center justify-center text-neutral-500 hover:text-neutral-800 hover:bg-neutral-100 transition-colors">
+          ✕
+        </button>
+      </div>
+
+      <!-- Drawer Nav Links -->
+      <div class="py-8 space-y-4 flex-1">
+        <a class="mobile-nav-link block font-display text-2xl font-extrabold tracking-tight text-neutral-900 hover:text-brand-purple py-1" href="#shop">Shop All</a>
+        <a class="mobile-nav-link block font-display text-2xl font-extrabold tracking-tight text-neutral-900 hover:text-brand-purple py-1" href="#new-in">New Drops</a>
+        <a class="mobile-nav-link block font-display text-2xl font-extrabold tracking-tight text-neutral-900 hover:text-brand-purple py-1" href="#collections">Curated Collections</a>
+        <a class="mobile-nav-link block font-display text-2xl font-extrabold tracking-tight text-neutral-900 hover:text-brand-purple py-1" href="#about">About STYLE 365</a>
+        <a class="mobile-nav-link block font-display text-2xl font-extrabold tracking-tight text-neutral-900 hover:text-brand-purple py-1" href="#contact">Contact</a>
+      </div>
+
+      <!-- Drawer Footer -->
+      <div class="pt-6 border-t border-neutral-100">
+        <a href="https://tiktok.com/@style..365" target="_blank" class="btn-neo flex items-center justify-center space-x-2 w-full py-3.5 text-white rounded-full text-xs font-bold mb-3">
+          <span>Follow on TikTok @style..365</span>
+        </a>
+        <p class="text-center text-[11px] text-neutral-400">© 2026 STYLE 365 Inc.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- SEARCH MODAL -->
+  <!-- ========================================================================= -->
+  <div id="searchModal" class="fixed inset-0 bg-neutral-900/60 backdrop-blur-md z-50 opacity-0 pointer-events-none transition-opacity duration-300 flex items-start justify-center pt-24 sm:pt-28 px-4">
+    <div class="glass-card w-full max-w-xl rounded-[28px] p-5 sm:p-6 shadow-2xl shadow-purple-950/30 transform scale-95 -translate-y-2 transition-transform duration-300">
+      <div class="flex items-center justify-between pb-4 border-b border-neutral-100">
+        <span class="text-xs font-bold uppercase tracking-wider text-neutral-400">Search Products</span>
+        <button id="closeSearchBtn" class="text-neutral-400 hover:text-neutral-800 text-sm font-bold">✕ Close</button>
+      </div>
+      <div class="mt-4 relative">
+        <input id="searchInput" type="text" placeholder="Search hoodies, blazers, silks, maxis..." class="w-full px-5 py-4 rounded-2xl bg-neutral-100/80 border-none text-base font-medium focus:ring-4 focus:ring-brand-purple/20 text-neutral-900">
+      </div>
+      <div class="mt-4">
+        <p class="text-xs font-semibold text-neutral-400 mb-2">Quick Tags</p>
+        <div class="flex flex-wrap gap-2">
+          <button class="quick-tag-btn px-3 py-1 bg-neutral-100 hover:bg-brand-softLilac hover:text-brand-darkPurple rounded-full text-xs font-medium text-neutral-700 transition-colors">Hoodies</button>
+          <button class="quick-tag-btn px-3 py-1 bg-neutral-100 hover:bg-brand-softLilac hover:text-brand-darkPurple rounded-full text-xs font-medium text-neutral-700 transition-colors">Blazers</button>
+          <button class="quick-tag-btn px-3 py-1 bg-neutral-100 hover:bg-brand-softLilac hover:text-brand-darkPurple rounded-full text-xs font-medium text-neutral-700 transition-colors">Maxi Dress</button>
+          <button class="quick-tag-btn px-3 py-1 bg-neutral-100 hover:bg-brand-softLilac hover:text-brand-darkPurple rounded-full text-xs font-medium text-neutral-700 transition-colors">Everyday Silks</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <!-- ========================================================================= -->
+  <div id="toastContainer" class="fixed top-20 sm:top-auto sm:bottom-24 lg:bottom-6 left-4 right-4 sm:left-auto sm:right-6 z-[60] flex flex-col items-center sm:items-end space-y-2 pointer-events-none"></div>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
