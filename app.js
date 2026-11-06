@@ -1,5 +1,5 @@
 /**
- * STYLE 365 - Dynamic Interactions & State Management
+ * Peach Treee - Dynamic Interactions & State Management
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -289,7 +289,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       showToast('Proceeding to Secure Checkout...');
       setTimeout(() => {
-        alert('Thank you for exploring STYLE 365! Checkout simulation completed.');
+        alert('Thank you for exploring Peach Treee! Checkout simulation completed.');
         closeCart();
       }, 700);
     });
