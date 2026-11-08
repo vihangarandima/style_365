@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------------------------------------------------
   let cart = [
     {
-      id: 'featured-hoodie',
-      name: 'Graffiti Violet Hoodie',
-      price: 79.99,
+      id: 'p1',
+      name: 'Magenta Tie-Dye Maxi',
+      price: 89.99,
       quantity: 1,
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBmIyL9ZnMa7biaXRu_Vv5hKo1MuYWLqWRuTl-quk5m4FQKFTdnfnPFDpQSWWqXv7V7LB64MLFp9a0yCi4mHXh9WQDBkOGH8mEaWBx6ts8stHXkeBQsNy2opfp410XbE8aADBKqluYUpLAUUjxcfwBEw7j0dGeoGULmtGMUpSaK8WXlrva7pTjfbEcBruvL3VXQhidAkklgsIpNtCEYfRODT7NW1scKguP_mWPOoWWFECzxZWGZODyP'
+      image: 'assets/tiktok/prod-magenta-maxi.webp'
     }
   ];
 
